@@ -114,6 +114,7 @@ color : yellow ;
 }
 body {
     background-image: url('https://i.pinimg.com/originals/df/40/89/df40899d3e1016db74dbabdf11d753fc.jpg');    
+    background-size: cover ;
    /* background-repeat: no-repeat ;*/
 }
 *{
