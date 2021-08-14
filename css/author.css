@@ -1,4 +1,71 @@
 
+
+
+*{
+    margin : auto ;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    width : 960px ;
+    height : 300px ;
+    background-image : url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover ;
+    margin : auto ;
+
+}
+header a{
+    cursor : move ;
+    float : right ;
+    font-size : 35px ;
+    font-weight : bolder ;
+    text-decoration: none ;
+    color : black ;
+    padding-right : 30px ;
+    padding-top : 100px ;
+}
+header a:hover {
+    color: rgb(236, 8, 168);
+}
+header h1 {
+    cursor : copy ;
+    padding-top : 10px ;
+    color : black ;
+    display: inline-block;
+    font-size: 90px;
+    font-weight : bolder ;
+}
+footer {
+    width : 960px ;
+    height : 300px ;
+    background-image: url('./img/footer.jpg');
+}
+footer section:nth-child(1) {
+    padding-top : 190px ;
+    padding-right : 30px ;
+    float : right ;
+}
+footer section:nth-child(2) {
+display : grid ;
+grid-template-columns: auto auto;
+ padding-top : 150px ;
+}
+footer section a {
+    cursor :grabbing ;
+    letter-spacing: 5px;
+    color: rgb(243, 241, 242);
+    text-decoration : none ;
+    font-weight : bolder ;
+    font-size : 16px ;
+    padding : 10px ;
+}
+footer section a:hover {
+    color: rgb(236, 8, 168);
+}
+footer section img {
+    padding : 10px ;
+}
+
+
 /******************************************/
 /******************************************/
 /******************************************/
