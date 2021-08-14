@@ -100,7 +100,7 @@ function clickOption(even)
   let info = document.getElementById('info') ;
   let sel = document.getElementById('soption').value ;
   name.textContent = sel ;
-  picB.src = ('/imgAuthor/' + sel + '.jpg') ;
+  picB.src = ('./imgAuthor/' + sel + '.jpg') ;
   picB.width = '700' ;
   picB.height = '600' ;
 
@@ -133,19 +133,19 @@ function randNum (min,max)
 // Function Print Image Randomly :
 function print()
 {
-  picOne.src = ('/imgAuthor/' + author.arr[one].pic) ;
+  picOne.src = ('./imgAuthor/' + author.arr[one].pic) ;
   pOne.textContent = author.arr[one].name ;
 
-  picTwo.src = ('/imgAuthor/' + author.arr[two].pic) ;
+  picTwo.src = ('./imgAuthor/' + author.arr[two].pic) ;
   pTwo.textContent = author.arr[two].name ;
 
-  picThree.src = ('/imgAuthor/' + author.arr[three].pic) ;
+  picThree.src = ('./imgAuthor/' + author.arr[three].pic) ;
   pThree.textContent = author.arr[three].name ;
 
-  picFour.src = ('/imgAuthor/' + author.arr[four].pic) ;
+  picFour.src = ('./imgAuthor/' + author.arr[four].pic) ;
   pFour.textContent = author.arr[four].name ;
 
-  picFive.src = ('/imgAuthor/' + author.arr[five].pic) ;
+  picFive.src = ('./imgAuthor/' + author.arr[five].pic) ;
   pFive.textContent = author.arr[five].name ;
 }
 // Function options Fill The Author Name In option :
