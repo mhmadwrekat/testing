@@ -1,0 +1,124 @@
+/******************************************/
+/******************************************/
+/******************************************/
+.authorDetails {
+    width : 960px ;
+    display : grid ;
+    grid-template-columns: auto auto ;
+    gap : 90px ;
+}
+main h3 {
+    text-align: center;
+    font-size: 35px ;
+    font-weight : bolder ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 80px ;
+    color : rgb(197, 194, 194) ;
+}
+fieldset{
+    font-weight : bolder ;
+    width : 630px ;
+    height : 100px ;
+    color : rgb(214, 208, 208) ;
+}
+main form{
+    padding : 10px ;
+    cursor:copy;
+    display : grid ;
+    gap : 20px ;
+    float : right ;
+    text-align: center;
+    align-items: center;
+    font-size: 35px ;
+    font-weight : bolder ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main select {
+    width : 220px ;
+    height : 35px ;
+    background-color: rgb(206, 188, 188) ;
+    color : rgb(0, 0, 0) ;
+    font-size : 18px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.searchS{
+    text-align: center;
+    padding : 0px ;
+}
+.searchS p {
+    font-weight : bolder ;
+    font-size: 35px ;
+    color : rgb(184, 178, 178) ;
+    padding-bottom : 50px ;
+    text-decoration:underline;
+}
+.searchS ul {
+    color : rgb(247, 244, 244) ;
+    padding-top : 50px ;
+}
+p {
+    cursor:copy;
+    letter-spacing: 3px;
+    color : rgb(207, 202, 202) ;
+    font-size : 23px ;
+    font-weight :bolder ;
+    padding : 20px ;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main div {
+    width : 450px ;
+    text-align: center;
+    
+}
+.search {
+    cursor :zoom-in ;
+    width : 220px ;
+    height : 35px ;
+}
+button{
+    font-size: 20px ;
+    font-weight : bolder ;
+    background-color: rgb(192, 180, 180);
+    color : rgb(0, 0, 0) ;
+    width : 170px ;
+    text-align: center;
+    cursor:nw-resize;    
+}
+.one :hover{
+    color: rgb(252, 5, 5) ;
+}
+main form :hover{
+color : rgb(160, 42, 107) ;
+}
+main h3:hover{
+color : rgb(229, 255, 0) ;
+}
+.searchS p:hover{
+color : yellow ;
+}
+.searchS ul:hover {
+    color : yellow ;
+}
+.one img {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 115px;
+    padding: 15px;
+}
+.one li{
+    padding-top : 15px ;
+    font-size : 20px ;
+    color : rgb(255, 255, 255) ;
+    font-weight : bolder ;
+}
+body {
+    background-image: url('https://i.pinimg.com/originals/df/40/89/df40899d3e1016db74dbabdf11d753fc.jpg');    
+   /* background-repeat: no-repeat ;*/
+}
+*{
+    padding-top : 5px ; 
+}
+
+footer {
+    background-image: unset;
+}
