@@ -84,6 +84,7 @@ butTwo.addEventListener('click' , click) ;
 butThree.addEventListener('click' , click) ;
 butFour.addEventListener('click' , click) ;
 butFive.addEventListener('click' , click) ;
+
 optionButton.addEventListener('click' , clickOption) ;
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -98,29 +99,22 @@ function clickOption(even)
   let name = document.getElementById('name') ;
   let picB = document.getElementById('picB') ;
   let info = document.getElementById('info') ;
+  let info2 = document.getElementById('info2') ;
+
   let sel = document.getElementById('soption').value ;
   name.textContent = sel ;
   picB.src = ('./imgAuthor/' + sel + '.jpg') ;
-  picB.width = '700' ;
-  picB.height = '600' ;
-
-  let ol1 = document.createElement('h2') ;
-  let li = document.createElement('h2') ;
-  let ol2 = document.createElement('h2') ;
-  let li2 = document.createElement('h2') ;
+  picB.width = '650' ;
+  picB.height = '550' ;
 
   for (let i = 0 ; i < srcimg.length ; i++ )
   {
     if (sel === srcimg[i].split('.')[0])
     {
-      ol1.textContent = 'Book 1. ( ' + book[i].split('.')[0] + ' )' ;
-      info.appendChild(ol1) ;
-      li.textContent = 'Published in : ' + puplish[i].split('.')[0] ;
-      info.appendChild(li) ;
-      ol2.textContent = 'Book 2. ( ' + book[i].split('.')[1] + ' )';
-      info.appendChild(ol2) ;
-      li2.textContent = 'Published in : ' + puplish[i].split('.')[1] ;
-      info.appendChild(li2) ;
+      info.textContent = 'Book 1. ( ' + book[i].split('.')[0] + ' )'
+      + ' > Published in : ' + puplish[i].split('.')[0] ;
+      info2.textContent = 'Book 2. ( ' + book[i].split('.')[1] + ' )'
+      + ' > Published in : ' + puplish[i].split('.')[1] ;
     } }
 }
 // Function Random Number :
@@ -171,6 +165,7 @@ function click(event)
 
   if (event.target.id === 'but1')
   {
+  //  li.removeChild(li.childNodes[0]);
     let li = document.createElement('li') ;
     li.textContent = 'Book 1. ( ' + book[one].split('.')[0] + ' )';
     butp1.appendChild(li) ;
@@ -183,6 +178,9 @@ function click(event)
     let li4 = document.createElement('li') ;
     li4.textContent = 'Published in : ' + puplish[one].split('.')[1] ;
     butp1.appendChild(li4) ;
+
+    butOne.style.display = 'none' ;
+
   } else if (event.target.id === 'but2')
   {
     let li = document.createElement('li') ;
@@ -197,6 +195,9 @@ function click(event)
     let li4 = document.createElement('li') ;
     li4.textContent = 'Published in : ' + puplish[two].split('.')[1] ;
     butp2.appendChild(li4) ;
+
+    butTwo.style.display = 'none' ;
+
   } else if (event.target.id === 'but3')
   {
     let li = document.createElement('li') ;
@@ -211,6 +212,9 @@ function click(event)
     let li4 = document.createElement('li') ;
     li4.textContent = 'Published in : ' + puplish[three].split('.')[1] ;
     butp3.appendChild(li4) ;
+
+    butThree.style.display = 'none' ;
+
   } else if (event.target.id === 'but4')
   {
     let li = document.createElement('li') ;
@@ -225,6 +229,9 @@ function click(event)
     let li4 = document.createElement('li') ;
     li4.textContent = 'Published in : ' + puplish[four].split('.')[1] ;
     butp4.appendChild(li4) ;
+
+    butFour.style.display = 'none' ;
+
   } else if (event.target.id === 'but5')
   {
     let li = document.createElement('li') ;
@@ -239,5 +246,10 @@ function click(event)
     let li4 = document.createElement('li') ;
     li4.textContent = 'Published in : ' + puplish[five].split('.')[1] ;
     butp5.appendChild(li4) ;
+
+    butFive.style.display = 'none' ;
+
   }
+  //  document.getElementById('click').removeEventListener('click', click);
+
 }

@@ -7,6 +7,7 @@
 }
 header {
     width : 1024px ;
+    height : 300px ;
     background-image : url('https://image.shutterstock.com/image-photo/back-school-education-banner-background-260nw-1276695403.jpg');
     background-size: cover ;
     margin : auto ;
@@ -17,7 +18,7 @@ header a{
     font-size : 30px ;
     font-weight : bolder ;
     text-decoration: none ;
-    color : rgb(202, 194, 194) ;
+    color : rgb(219, 210, 210) ;
     padding-right : 30px ;
     padding-top : 100px ;
 }
@@ -27,7 +28,7 @@ header a:hover {
 header h1 {
     cursor : copy ;
     padding-top : 10px ;
-    color : black ;
+    color : rgb(231, 226, 226) ;
     display: inline-block;
     font-size: 90px;
     font-weight : bolder ;
@@ -35,7 +36,6 @@ header h1 {
 footer {
     width : 1024px ;
     height : 300px ;
-    background-image: url('./img/footer.jpg');
 }
 footer section:nth-child(1) {
     padding-top : 190px ;
@@ -106,16 +106,16 @@ main select {
 }
 .searchS{
     text-align: center;
-    padding : 0px ;
+    padding-bottom: 120px ;
 }
 .searchS p {
     font-weight : bolder ;
     font-size: 35px ;
-    color : rgb(184, 178, 178) ;
+    color : rgb(145, 151, 52) ;
     padding-bottom : 50px ;
     text-decoration:underline;
 }
-.searchS ul {
+.searchS h2 {
     color : rgb(247, 244, 244) ;
     padding-top : 50px ;
 }
@@ -128,7 +128,6 @@ p {
     padding : 20px ;
     font-family:'Times New Roman', Times, serif;
 }
-
 main div {
     width : 450px ;
     text-align: center;
