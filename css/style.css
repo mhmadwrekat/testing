@@ -32,6 +32,8 @@ header a:hover {
 }
 /* FOOTER */
 footer {
+   /* background-image : url('https://www.jing.fm/clipimg/full/232-2323612_homepage-footer-background-1920x840px.png') ;*/
+    
     background-image : url('https://pngimage.net/wp-content/uploads/2018/06/red-footer-png-3.png') ;
     background-size: cover ;
     height : 300px ;
