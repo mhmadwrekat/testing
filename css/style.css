@@ -32,11 +32,12 @@ header a:hover {
 }
 /* FOOTER */
 footer {
-    background-image : url('/img/footer.jpg') ;
+    background-image : url('https://pngimage.net/wp-content/uploads/2018/06/red-footer-png-3.png') ;
+    background-size: cover ;
     height : 300px ;
 }
 footer section:nth-child(1) {
-    padding-top : 190px ;
+    padding-top : 210px ;
     padding-right : 30px ;
     float : right ;
 }
