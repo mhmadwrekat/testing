@@ -104,8 +104,8 @@ function clickOption(even)
   let sel = document.getElementById('soption').value ;
   name.textContent = sel ;
   picB.src = ('./imgAuthor/' + sel + '.jpg') ;
-  picB.width = '650' ;
-  picB.height = '550' ;
+  picB.width = '500' ;
+  picB.height = '400' ;
 
   for (let i = 0 ; i < srcimg.length ; i++ )
   {
