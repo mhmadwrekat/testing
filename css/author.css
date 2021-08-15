@@ -18,7 +18,7 @@ header a{
     font-size : 20px ;
     font-weight : bolder ;
     text-decoration: none ;
-    color : rgb(241, 234, 234) ;
+    color : rgb(255, 255, 255) ;
     padding-right : 30px ;
     padding-top : 100px ;
 }
@@ -28,12 +28,13 @@ header a:hover {
 header h1 {
     cursor : copy ;
     padding-top : 10px ;
-    color : rgb(231, 226, 226) ;
+    color : rgb(255, 255, 255) ;
     display: inline-block;
     font-size: 60px;
     font-weight : bolder ;
 }
 footer {
+    background-image : url('/img/footer.jpg') ;
     width : 1024px ;
     height : 300px ;
 }
@@ -50,7 +51,7 @@ grid-template-columns: auto auto;
 footer section a {
     cursor :grabbing ;
     letter-spacing: 5px;
-    color: rgb(243, 241, 242);
+    color: rgb(255, 255, 255);
     text-decoration : none ;
     font-weight : bolder ;
     font-size : 16px ;
@@ -79,16 +80,16 @@ main h3 {
     font-weight : bolder ;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 80px ;
-    color : rgb(197, 194, 194) ;
+    color : rgb(0, 0, 0) ;
 }
 fieldset{
     padding-top : 15px ;
     text-align: center;
     width : 350px ;
-    background-color: rgb(0,0,0,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     font-weight : bolder ;
     height : 120px ;
-    color : rgb(214, 208, 208) ;
+    color : rgb(0, 0, 0) ;
 }
 main form{
     padding : 10px ;
@@ -116,14 +117,14 @@ main select {
     text-decoration:underline;
 }
 .searchS h2 {
-    color : rgb(247, 244, 244) ;
+    color : rgb(0, 0, 0) ;
     padding-top : 50px ;
     font-size : 20px ;
 }
 p {
     cursor:copy;
     letter-spacing: 3px;
-    color : rgb(255, 255, 255) ;
+    color : rgb(0, 0, 0) ;
     font-size : 17px ;
     font-weight :bolder ;
     padding : 20px ;
@@ -140,14 +141,14 @@ main div {
     height : 27px ;
 }
 main form select {
-    background-color: rgb(0,0,0,0.6) ;
-    color : white ;
+    background-color: rgba(255, 255, 255, 0.6) ;
+    color : rgb(0, 0, 0) ;
 }
 button{
     font-size: 17px ;
     font-weight : bolder ;
-    background-color: rgb(0,0,0,0.6);
-    color : rgb(255, 255, 255) ;
+    background-color: rgba(255, 255, 255, 0.6);
+    color : rgb(0, 0, 0) ;
     width : 100px ;
     text-align: center;
     cursor:nw-resize;    
@@ -176,19 +177,21 @@ color : yellow ;
 .one li{
     padding-top : 15px ;
     font-size : 14px ;
-    color : rgb(255, 255, 255) ;
+    color : rgb(2, 2, 2) ;
     font-weight : bolder ;
 }
 body {
     width : 1024px ;
-    background-image: url('https://i.pinimg.com/originals/df/40/89/df40899d3e1016db74dbabdf11d753fc.jpg');    
-    background-size: cover ;
-   /* background-repeat: no-repeat ;*/
+   /* background-image: url('https://i.pinimg.com/originals/df/40/89/df40899d3e1016db74dbabdf11d753fc.jpg');    
+    background-size:auto ;*/
+   /* background-repeat: no-repeat ;
+   opacity : 0.3 ;
+   */
 }
 *{
     padding-top : 5px ; 
 }
 
-footer {
+/*footer {
     background-image: unset;
-}
+}*/
