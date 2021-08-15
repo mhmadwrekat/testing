@@ -6,13 +6,14 @@
 header {
     width : 1024px ;
     height : 300px ;
-    background-image : url('https://image.shutterstock.com/image-photo/back-school-education-banner-background-260nw-1276695403.jpg');
+    background-image : url('https://img.freepik.com/free-vector/pink-horizontal-banner-header-isolated-white-background-poster-background-brochure-template_199548-774.jpg?size=626&ext=jpg');
     background-size: cover ;
     margin : auto ;
 }
 header a{
+    padding-left: 20px ;
     cursor :grab ;
-    float : right ;
+    float : left ;
     font-size : 20px ;
     font-weight : bolder ;
     text-decoration: none ;
@@ -26,7 +27,7 @@ header a:hover {
 header h1 {
     cursor : copy ;
     padding-top : 10px ;
-    color : rgb(255, 255, 255) ;
+    color : rgb(0, 0, 0) ;
     display: inline-block;
     font-size: 60px;
     font-weight : bolder ;
@@ -148,7 +149,7 @@ button{
     font-weight : bolder ;
     background-color: rgba(255, 255, 255, 0.6);
     color : rgb(0, 0, 0) ;
-    width : 100px ;
+    width : 120px ;
     text-align: center;
     cursor:nw-resize;    
 }
