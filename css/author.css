@@ -6,20 +6,18 @@
     font-family: 'Courier New', Courier, monospace;
 }
 header {
-    width : 960px ;
-    height : 300px ;
-    background-image : url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    width : 1024px ;
+    background-image : url('https://image.shutterstock.com/image-photo/back-school-education-banner-background-260nw-1276695403.jpg');
     background-size: cover ;
     margin : auto ;
-
 }
 header a{
-    cursor : move ;
+    cursor :grab ;
     float : right ;
-    font-size : 35px ;
+    font-size : 30px ;
     font-weight : bolder ;
     text-decoration: none ;
-    color : black ;
+    color : rgb(202, 194, 194) ;
     padding-right : 30px ;
     padding-top : 100px ;
 }
@@ -35,7 +33,7 @@ header h1 {
     font-weight : bolder ;
 }
 footer {
-    width : 960px ;
+    width : 1024px ;
     height : 300px ;
     background-image: url('./img/footer.jpg');
 }
@@ -70,7 +68,7 @@ footer section img {
 /******************************************/
 /******************************************/
 .authorDetails {
-    width : 960px ;
+    width : 1024px ;
     display : grid ;
     grid-template-columns: auto auto ;
     gap : 90px ;
@@ -84,28 +82,25 @@ main h3 {
     color : rgb(197, 194, 194) ;
 }
 fieldset{
+    padding-top : 15px ;
+    text-align: center;
+    width : 500px ;
+    background-color: rgb(0,0,0,0.6);
     font-weight : bolder ;
-    width : 630px ;
-    height : 100px ;
+    height : 120px ;
     color : rgb(214, 208, 208) ;
 }
 main form{
     padding : 10px ;
-    cursor:copy;
-    display : grid ;
-    gap : 20px ;
-    float : right ;
-    text-align: center;
-    align-items: center;
+    cursor : copy ;
     font-size: 35px ;
     font-weight : bolder ;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 main select {
     width : 220px ;
     height : 35px ;
-    background-color: rgb(206, 188, 188) ;
-    color : rgb(0, 0, 0) ;
     font-size : 18px ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -127,7 +122,7 @@ main select {
 p {
     cursor:copy;
     letter-spacing: 3px;
-    color : rgb(207, 202, 202) ;
+    color : rgb(255, 255, 255) ;
     font-size : 23px ;
     font-weight :bolder ;
     padding : 20px ;
@@ -144,12 +139,16 @@ main div {
     width : 220px ;
     height : 35px ;
 }
+main form select {
+    background-color: rgb(0,0,0,0.6) ;
+    color : white ;
+}
 button{
     font-size: 20px ;
     font-weight : bolder ;
-    background-color: rgb(192, 180, 180);
-    color : rgb(0, 0, 0) ;
-    width : 170px ;
+    background-color: rgb(0,0,0,0.6);
+    color : rgb(255, 255, 255) ;
+    width : 140px ;
     text-align: center;
     cursor:nw-resize;    
 }
@@ -180,6 +179,7 @@ color : yellow ;
     font-weight : bolder ;
 }
 body {
+    width : 1024px ;
     background-image: url('https://i.pinimg.com/originals/df/40/89/df40899d3e1016db74dbabdf11d753fc.jpg');    
     background-size: cover ;
    /* background-repeat: no-repeat ;*/
@@ -191,4 +191,3 @@ body {
 footer {
     background-image: unset;
 }
-
