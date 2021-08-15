@@ -118,6 +118,7 @@ main select {
 .searchS h2 {
     color : rgb(247, 244, 244) ;
     padding-top : 50px ;
+    font-size : 20px ;
 }
 p {
     cursor:copy;
@@ -171,6 +172,7 @@ color : yellow ;
     border-radius: 90px;
     padding: 12px;
 }
+
 .one li{
     padding-top : 15px ;
     font-size : 14px ;
