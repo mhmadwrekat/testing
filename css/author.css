@@ -1,6 +1,4 @@
 
-
-
 *{
     margin : auto ;
     font-family: 'Courier New', Courier, monospace;
@@ -72,27 +70,28 @@ footer section img {
     width : 1024px ;
     display : grid ;
     grid-template-columns: auto auto ;
-    gap : 90px ;
+    gap : 50px ;
 }
 main h3 {
     text-align: center;
     font-size: 25px ;
     font-weight : bolder ;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 80px ;
+    margin: 60px ;
     color : rgb(0, 0, 0) ;
 }
 fieldset{
-    padding-top : 15px ;
     text-align: center;
     width : 350px ;
     background-color: rgba(255, 255, 255, 0.6);
     font-weight : bolder ;
     height : 120px ;
     color : rgb(0, 0, 0) ;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(0,0,0,0.2);
+
 }
 main form{
-    padding : 10px ;
     cursor : copy ;
     font-size: 25px ;
     font-weight : bolder ;
@@ -107,7 +106,7 @@ main select {
 }
 .searchS{
     text-align: center;
-    padding-bottom: 120px ;
+    padding-bottom: 20px ;
 }
 .searchS p {
     font-weight : bolder ;
