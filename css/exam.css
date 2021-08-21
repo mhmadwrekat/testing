@@ -1,0 +1,29 @@
+
+/*
+- rgba(96, 96, 96,0.6)
+  - #000
+*/
+
+body{
+  width : 1024px ;
+  margin : auto ;
+  background-color: rgba(96, 96, 96,0.6) ;
+}
+main{
+}
+fieldset{
+  text-align: center;
+}
+form{
+  display : grid ;
+  grid-template-columns: auto auto auto;
+  gap : 20px ;
+}
+
+
+
+
+
+
+
+
