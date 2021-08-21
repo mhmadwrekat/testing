@@ -49,11 +49,6 @@ function sub(event) {
 */
 }
 
-
-
-
-
-
 function print ()
 {
   /*
