@@ -26,7 +26,6 @@ function Article(authors , title , content , subject , id , like)
   arr.push(this) ;
 }
 
-
 let id = arr.length ;
 
 let like = 0 ;
@@ -90,7 +89,6 @@ function sub(event) {
   div.appendChild(li2) ;
   div.appendChild(pic) ;
   div.appendChild(hr) ;
-
 }
 function print()
 {
@@ -134,14 +132,16 @@ function print()
     div.appendChild(pic) ;
     div.appendChild(hr) ;
   }
+
 }
 function clear(event){
 
   localStorage.removeItem('article');
+  section.removeChild(section.lastChild);
+  arr.length-- ;
+  num.textContent = arr.length ;
+location.reload() ;
+
 }
-
-
-
-
 
 
