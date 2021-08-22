@@ -15,7 +15,7 @@ const section = document.getElementById('print') ;
 
 let arr = JSON.parse(localStorage.getItem('article')) ;
 
-function Article(authors , title , content , subject , id , like)
+function Article(authors , title , content , subject , id , like , date)
 {
   this.name = authors ;
   this.title = title ;
@@ -23,8 +23,10 @@ function Article(authors , title , content , subject , id , like)
   this.subject = subject ;
   this.id = id ;
   this.like = like ;
+  this.date = date ;
   arr.push(this) ;
 }
+let date = new Date();
 
 let id = arr.length ;
 
@@ -46,13 +48,12 @@ function sub(event) {
 
   num.textContent = id ;
   like = rand(0,500) ;
-  new Article(event.target.name.value , event.target.title.value , event.target.content.value , event.target.subject.value , id , like ) ;
+  new Article(event.target.name.value , event.target.title.value , event.target.content.value , event.target.subject.value , id , like , date) ;
 
   localStorage.setItem('article' , JSON.stringify(arr)) ;
 
   let a = JSON.parse(localStorage.getItem('article')) ;
   console.log(a) ;
-
 
   let div = document.createElement('div') ;
   section.appendChild(div) ;
@@ -81,6 +82,10 @@ function sub(event) {
   pic.src = './img/face.png' ;
   pic.width = '200' ;
   pic.height = '200' ;
+  
+  let dat = document.createElement('li') ;
+  dat.textContent = 'Date : ' + date ;
+
   div.appendChild(name) ;
   div.appendChild(title) ;
   div.appendChild(content) ;
@@ -88,6 +93,7 @@ function sub(event) {
   div.appendChild(li) ;
   div.appendChild(li2) ;
   div.appendChild(pic) ;
+  div.appendChild(dat) ;
   div.appendChild(hr) ;
 }
 function print()
@@ -117,6 +123,9 @@ function print()
     let li2 = document.createElement('li') ;
     li2.textContent = 'ID : ' + arr[i].id ;
 
+    let dat = document.createElement('li') ;
+    dat.textContent = 'Date : ' + arr[i].date ;
+
     let hr = document.createElement('hr') ;
 
     let pic = document.createElement('img') ;
@@ -130,18 +139,16 @@ function print()
     div.appendChild(li) ;
     div.appendChild(li2) ;
     div.appendChild(pic) ;
+    div.appendChild(dat) ;
     div.appendChild(hr) ;
   }
-
 }
-function clear(event){
+function clear(_event){
 
   localStorage.removeItem('article');
   section.removeChild(section.lastChild);
   arr.length-- ;
   num.textContent = arr.length ;
-location.reload() ;
+  location.reload() ;
 
 }
-
-
