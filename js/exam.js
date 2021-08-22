@@ -14,10 +14,7 @@ if (localStorage.getItem('article') === null)
   localStorage.setItem('article',JSON.stringify([])) ;
 }
 //a.style.display = 'hidden' ;
-let section = document.getElementById('print') ;
-
-section.removeChild(section.childNodes[2]);
-
+const section = document.getElementById('print') ;
 
 let arr = JSON.parse(localStorage.getItem('article')) ;
 
@@ -42,6 +39,13 @@ num.textContent = id ;
   new Constr(authors[i] , title[i] , content[i] , subject[i] , id , like) ;
 }*/
 document.addEventListener('submit',sub) ;
+
+document.addEventListener('reset',clear) ;
+
+
+
+
+
 print();
 function sub(event) {
   event.preventDefault() ;
@@ -66,7 +70,6 @@ function sub(event) {
 
   ///////////////////////////////////////
 
-  let section = document.getElementById('print') ;
   let div = document.createElement('div') ;
   section.appendChild(div) ;
 
@@ -103,58 +106,13 @@ function sub(event) {
   div.appendChild(pic) ;
   div.appendChild(hr) ;
 
-
-  ////////////////////////////////////////
-
-
-
-
-  /*
-  let num = document.getElementById('num') ;
-  num.textContent = id ;
-
-  let section = document.getElementById('print') ;
-  let div = document.createElement('div') ;
-  section.appendChild(div) ;
-
-  let name = document.createElement('li') ;
-  name.textContent = 'Author Name : ' + event.target.name.value ;
-
-  let title = document.createElement('li') ;
-  title.textContent = 'Title : ' + event.target.title.value ;
-
-  let subject = document.createElement('li') ;
-  subject.textContent = 'Subject : ' + event.target.subject.value ;
-
-  let content = document.createElement('li') ;
-  content.textContent = 'Content : ' + event.target.content.value ;
-
-  let li = document.createElement('li') ;
-  content.textContent = like ;
-
-  let li2 = document.createElement('li') ;
-  content.textContent = 'Article Number : ' + id ;
-
- // let pic = document.createElement('img') ;
- // pic.src = './img/face.png' ;
- // pic.width = '200' ;
-  //pic.height = '200' ;
-  div.appendChild(name) ;
-  div.appendChild(title) ;
-  div.appendChild(subject) ;
-  div.appendChild(content) ;
- // div.appendChild(pic) ;
-  div.appendChild(li) ;
-  div.appendChild(li2) ;
-*/
-
-  /*console.log('arthor name : '+event.target.name.value
-. . .``..
-. +'TITLE :' + event.target.title.value + 'subject : ' + event.target.subject.value );
-  console.log(event.target.content.value) ;
-*/
 }
+function clear(event){
+  event.preventDefault() ;
+  section.removeChild(section.childNodes[2]) ; 
 
+
+}
 
 
 
@@ -167,7 +125,6 @@ function print()
   for (let i = 0 ; i < arr.length ; i++)
   {
     
-    let section = document.getElementById('print') ;
     let div = document.createElement('div') ;
     section.appendChild(div) ;
 
