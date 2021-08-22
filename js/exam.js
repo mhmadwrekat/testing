@@ -7,13 +7,10 @@ function rand (min,max){
   return Math.floor((Math.random() * (max - min + 1) + min)*1) ;
 }
 
-//    butOne.style.display = 'none' ;
-
 if (localStorage.getItem('article') === null)
 {
   localStorage.setItem('article',JSON.stringify([])) ;
 }
-//a.style.display = 'hidden' ;
 const section = document.getElementById('print') ;
 
 let arr = JSON.parse(localStorage.getItem('article')) ;
@@ -28,33 +25,24 @@ function Article(authors , title , content , subject , id , like)
   this.like = like ;
   arr.push(this) ;
 }
+
+
 let id = arr.length ;
 
 let like = 0 ;
-//Article.arr = [] ;
+
 let num = document.getElementById('num') ;
 num.textContent = id ;
-/*for (let i = 0 ; i < authors.length ; i++)
-{
-  new Constr(authors[i] , title[i] , content[i] , subject[i] , id , like) ;
-}*/
-document.addEventListener('submit',sub) ;
 
+document.addEventListener('submit',sub) ;
 document.addEventListener('reset',clear) ;
 
-
-
-
-
 print();
+
+/// SUBMIT
 function sub(event) {
   event.preventDefault() ;
-  /*  for (let i = 0 ; i < authors.length ; i++)
-  {
-    new Constr(event.target.name.value[i] , event.target.title.value[i] , event.target.content.value[i] , event.target.subject.value[i] , id[i] , like[i]) ;
-  }*/
 
-  //  console.log(Constr.arr[0]) ;
   let id = arr.length + 1 ;
 
   num.textContent = id ;
@@ -62,13 +50,10 @@ function sub(event) {
   new Article(event.target.name.value , event.target.title.value , event.target.content.value , event.target.subject.value , id , like ) ;
 
   localStorage.setItem('article' , JSON.stringify(arr)) ;
-  //  console.log(Article.arr) ;
-  //print ();
+
   let a = JSON.parse(localStorage.getItem('article')) ;
   console.log(a) ;
 
-
-  ///////////////////////////////////////
 
   let div = document.createElement('div') ;
   section.appendChild(div) ;
@@ -107,23 +92,12 @@ function sub(event) {
   div.appendChild(hr) ;
 
 }
-function clear(event){
- // event.preventDefault() ;
-//  section.removeChild(section.childNodes[2]) ; 
-  localStorage.removeItem("article");
-}
-
-
-
-
-/**/
 function print()
 {
-  //for (let i = 0 ; i < Article.arr.length ; i++)
-  //{
+
   for (let i = 0 ; i < arr.length ; i++)
   {
-    
+
     let div = document.createElement('div') ;
     section.appendChild(div) ;
 
@@ -161,52 +135,10 @@ function print()
     div.appendChild(hr) ;
   }
 }
+function clear(event){
 
-/* for(let i = 0 ; i < authors.length ; i++)
-  {
-    let section = document.getElementById('print') ;
-    let div = document.createElement('div') ;
-    section.appendChild(div) ;
-
-    let name = document.createElement('li') ;
-    name.textContent = 'Author Name : ' + constr.arr[i].name ;
-
-    let title = document.createElement('li') ;
-    title.textContent = 'Title : ' + constr.arr[i].titles ;
-
-    let content = document.createElement('li') ;
-    content.textContent = 'Content : ' + constr.arr[i].contents ;
-
-    let subject = document.createElement('li') ;
-    subject.textContent = 'Subject : ' + constr.arr[i].subjects ;
-
-    let pic = document.createElement('img') ;
-    pic.src = './img/face.png' ;
-    pic.width = '200' ;
-    pic.height = '200' ;
-    div.appendChild(name) ;
-    div.appendChild(title) ;
-    div.appendChild(content) ;
-    div.appendChild(subject) ;
-    div.appendChild(pic) ;
-  }*/
-//return neww ;
-//}
-
-
-
-
-/*
-function randNum (min,max)
-{
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor((Math.random() * (max - min + 1) + min)*1) ;
+  localStorage.removeItem('article');
 }
-*/
-
-
-
 
 
 
