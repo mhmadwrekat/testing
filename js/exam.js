@@ -108,10 +108,9 @@ function sub(event) {
 
 }
 function clear(event){
-  event.preventDefault() ;
-  section.removeChild(section.childNodes[2]) ; 
-
-
+ // event.preventDefault() ;
+//  section.removeChild(section.childNodes[2]) ; 
+  localStorage.removeItem("article");
 }
 
 
