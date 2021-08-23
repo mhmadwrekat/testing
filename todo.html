@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/todo.css">
+    </head>
+    <title></title>
+    <body>
+        <header>
+            <h1>My To Do List</h1>
+        </header>
+        <main>
+<!--
+    task description, task due date,
+     and task urgency:
+     following: 
+Low, Medium, High
+ table
+
+-->
+<section class='s1'>
+    <fieldset>
+    <form class='form'>
+
+        <label for="task">Task </label>
+    <input type="text" id="task" name="task">
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date">
+
+    <label for="usgency">Urgency</label>
+    <select name="urgency" id="urgency">
+      <option value="low">Low</option>
+      <option value="mudiem">Mudiem</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <input class='blas'  type="submit" value="Submit">
+
+</form> 
+</fieldset>
+</section>
+
+<section class='s2'>
+    <table id='table'>
+
+    </table>
+    <form>
+    <input class='blac' type="reset" value="Clear All">
+</form>
+</section>
+
+
+
+        </main>
+        <footer>
+            <p>All Reserve CopyRight 2021.mohammad alwrekat</p>
+        </footer>
+        <script src='./js/todo.js'></script>
+    </body>
+</html>
