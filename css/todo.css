@@ -29,6 +29,7 @@ main{
     display: grid ;
     grid-template-columns: 40% 50%;
     gap : 50px ;
+    margin-bottom: 300px ;
 }
 fieldset{
     width : 100% ;
