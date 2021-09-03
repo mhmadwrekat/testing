@@ -24,19 +24,16 @@
 
 ---
 
-<img src='./img/one.JPG' width='500' height='300'>
-
-<img src='./img/tw.JPG' width='500' height='300'>
-
----
-
-<img src='./img/six.JPG' width='500' height='300'>
-
-<img src='./img/thre.JPG' width='500' height='300'>
+<img src='./img/one.JPG' width='450' height='300'>
+<img src='./img/tw.JPG' width='450' height='300'>
 
 ---
 
-<img src='./img/fou.JPG' width='500' height='300'>
+<img src='./img/six.JPG' width='450' height='300'>
+<img src='./img/thre.JPG' width='450' height='300'>
 
-<img src='./img/fiv.JPG' width='500' height='300'>
+---
+
+<img src='./img/fou.JPG' width='450' height='300'>
+<img src='./img/fiv.JPG' width='450' height='300'>
 
