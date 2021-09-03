@@ -20,26 +20,23 @@
 ---
 ## *projects*
 
-<img src='./img/proj.JPG' width='400' height='300'>
+<img src='./img/proj.JPG' width='1100' height='400'>
 
 ---
-<img src='./img/prof.jpg' width='150' height='150'>
 
-<img src='./img/prof.jpg' width='150' height='150'>
+<img src='./img/one.JPG' width='500' height='300'>
 
-<img src='./img/prof.jpg' width='150' height='150'>
+<img src='./img/tw.JPG' width='500' height='300'>
 
+---
 
-<img src='./img/prof.jpg' width='150' height='150'>
+<img src='./img/six.JPG' width='500' height='300'>
 
-<img src='./img/prof.jpg' width='150' height='150'>
+<img src='./img/thre.JPG' width='500' height='300'>
 
-<img src='./img/prof.jpg' width='150' height='150'>
+---
 
+<img src='./img/fou.JPG' width='500' height='300'>
 
-
-
-
-
-
+<img src='./img/fiv.JPG' width='500' height='300'>
 
