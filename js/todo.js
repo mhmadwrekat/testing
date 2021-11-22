@@ -31,11 +31,8 @@ let th1 = document.createElement('th') ;
 th1.textContent = 'Date' ;
 tr.appendChild(th1) ;
 let th2 = document.createElement('th') ;
-th2.textContent = 'Urgency' ;
+th2.textContent = 'Percentage' ;
 tr.appendChild(th2) ;
-let th3 = document.createElement('th') ;
-th3.textContent = 'Done' ;
-tr.appendChild(th3) ;
 ////////////////////////////////////////// SUBMIT
 document.addEventListener('submit' , submit) ;
 function submit(happen)
