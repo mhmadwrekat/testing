@@ -56,17 +56,18 @@ label{
     color : white ;
 }
 .s2{
-    background-color: rgb(50, 79, 143,.8);
+    background-color: rgb(50, 180, 13,.8);
     margin: 5px ;
     padding-top : 50px ;
     padding-bottom : 50px ;
-width : 800px ;
+width :600px ;
 }
 table{
     color : white ;
     border : 1px solid white ;
     background-color: #3D3D3D;
 margin-left: 25px ;
+margin : 5px ;
 }
 th , td , tr {
     background-color: #3D3D3D;
