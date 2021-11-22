@@ -25,7 +25,7 @@ let table = document.getElementById('table') ;
 let tr = document.createElement('tr') ;
 table.appendChild(tr) ;
 let th = document.createElement('th') ;
-th.textContent = 'Task' ;
+th.textContent = 'Notes' ;
 tr.appendChild(th) ;
 let th1 = document.createElement('th') ;
 th1.textContent = 'Date' ;
